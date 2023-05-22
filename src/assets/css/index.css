@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-[62.5%] max-w-[100vw] scroll-smooth;
+  }
+  :root {
+    --floral-white: 254 249 238;
+    --primary-tomato: 255 69 69;
+    --light-pink: 245 184 209;
+    --tyrian-Purple: 117 8 58;
+    --dark-tyrian-Purple: 63 16 38;
+    --primary-green: 68 175 105;
+    --light-green: 186 227 200;
+    --primary-orange: 255 127 17;
+    --light-orange: 253 201 156;
+    --primary-yellow: 254 210 67;
+    --light-yellow: 255 237 180;
+    --dark-yellow: 80 74 36;
+    --dark-gray: 31 29 26;
+  }
+  body {
+    @apply font-['Lexend',sans-serif];
+  }
+}
+
+@layer utilities {
+  /***********  general  ***********/
+  .general-x-padding {
+    @apply px-6 sm:px-16 lg:px-44 2xl:px-60;
+  }
+
+  .general-y-padding {
+    @apply py-[calc(3rem+5vw)];
+  }
+
+  .title-lg {
+    @apply text-[calc(2rem+3vw)];
+  }
+
+  .title-md {
+    @apply text-[calc(1.6rem+2vw)];
+  }
+
+  .title-sm {
+    @apply text-[1.8rem] md:text-[2rem] lg:text-[2.4rem];
+  }
+
+  .description-lg {
+    @apply text-[clamp(2.4rem,1.4rem+1.4vw,3.2rem)] leading-loose font-semibold font-['Quicksand',sans-serif] xs:max-w-[90%] text-center mx-auto;
+  }
+
+  .description-md {
+    @apply text-[clamp(1.6rem,1rem+1vw,2.2rem)] leading-relaxed font-['Quicksand',sans-serif];
+  }
+
+  .description-sm {
+    @apply text-[1.6rem] sm:text-[1.8rem] leading-relaxed font-['Quicksand',sans-serif];
+  }
+}
